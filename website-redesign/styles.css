@@ -1,0 +1,91 @@
+* {
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1000px;
+}
+
+.sneakers_header
+{
+    width: 100w;
+    height: 200px;
+    border: 1px solid red;
+    background-color: black;
+}
+.sneakers_header-navbar-container
+{
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.sneakers_header-navbar-logo
+{
+    width: auto;
+    height:60px;
+    padding:10px;
+    margin-left: 30px;
+}
+.sneakers_header-navbar {
+    width:auto;
+    min-width: 400px;
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 30px;
+}
+
+.sneakers_header-navbar-item
+{
+    font-size: 20px;
+    padding: 0px 10px;
+    margin: auto 0;
+}
+
+.sneakers_header-navbar-link
+{
+    text-decoration: none;
+    color:white;
+}
+
+.sneakers_main
+{
+    width:100w;
+    height:auto;
+}
+
+.sneakers_container
+{
+    display:flex;
+    width:90%;
+    height: 700px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sneakers_card
+{
+    width:220px;
+    height:250px;
+    background-color: Lightgrey;
+    margin:20px;
+}
+
+.sneakers_image
+{
+    width:100%;
+    height:auto;
+}
+.sneakers_caption
+{
+    margin-top: 30px;
+    text-align: center;
+
+}
