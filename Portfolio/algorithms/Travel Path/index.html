@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/5ad399a984.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-dark bg-dark" style="font-size: 25px;margin-left: 500px; font-family: sans-serif; background-color: white;">
+        Least time travel path project
+
+    </nav>
+    <div id="container" class="bg-dark text-white">
+        <div id="mynetwork">
+        </div>
+        <div id="container2">
+            <span id="temptext2" style="width: 100%; text-align: center; font-size: x-large">
+            </span>
+            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+                <b>Yellow link represents bus travel time : </b><i class="fa fa-bus" aria-hidden="true" style="color: orange"></i><br>
+                <b>Red link represents flight travel time : </b><i class="fa fa-plane" aria-hidden="true" style="color: red"></i><br>
+
+                <b>Note : You can take flight once once!!!</b><br>
+
+                <b>Click on <span class="text-success">solve</span> to get Solution !!</b><br>
+                <p class="mt-5"><b><span class="text-danger"> Move </span>the house to get better visualization</b></p>
+            </span>
+            <div id="mynetwork2" style="display: none"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <button type="button" class="btn btn-danger" id="generate-graph">Get New Problem</button>
+        <br>
+        <button type="button" class="btn btn-success" id="solve">Solve</button>
+    </div>
+</body>
+
+</html>

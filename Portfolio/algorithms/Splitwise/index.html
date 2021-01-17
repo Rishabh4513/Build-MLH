@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/5ad399a984.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="heap.js"></script>
+    <script src="script.js" type="module"></script>
+  </head>
+
+  <body class="bg-dark">
+    <nav
+      class="navbar navbar-light bg-dark text-white"
+      style="
+        font-size: 25px;
+        font-family: sans-serif;
+        background-color: whitesmoke;
+        padding-left: 20%;
+      "
+    >
+      Cash Settlement Project
+    </nav>
+    <div id="container" class="bg-dark text-white">
+      <i class="fa fa-flag" style="visibility: hidden;"></i>
+      <div id="mynetwork"></div>
+      <div id="container2">
+        <span
+          id="temptext"
+          style="width: 100%; text-align: center; font-size: x-large;"
+         >
+          <br>
+          Each edge&nbsp;between two persons <i class="fa fa-user" aria-hidden="true" style="color: orange"></i>&nbsp;represent the amout of &nbsp;money to be&nbsp;transacted.
+          <br>
+          <b >Reduce the overall number of transactions.</b>
+          <br>
+          <b>Click on <b class="text-success">solve</b> to get Solution !!</b>
+          <br>
+          <br>
+          <p class=""><b><span class="text-danger"> Move </span>the person to get better visualization</b></p>
+        </span>
+        <div id="mynetwork2" style="display: none;"></div>
+      </div>
+    </div>
+
+    <div>
+      <br />
+      <button type="button" class="btn btn-danger" id="generate-graph">
+        Get New Problem
+      </button>
+      <br />
+      <button type="button" class="btn btn-success" id="solve">Solve</button>
+    </div>
+  </body>
+</html>
